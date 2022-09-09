@@ -55,16 +55,13 @@
                 Hey, I'm Alex Spencer and I love building beautiful websites
               </h1>
 
-              <a class="hero__link" href="#">
-                <span></span>
-                About me
-              </a>
+              <a class="hero__link" href="#about"> <span></span> About me </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about__inner">
             <div class="about__image">
@@ -85,6 +82,7 @@
                 />
 
                 <source
+                  media="(max-width:1150px)"
                   width="540"
                   height="600"
                   srcset="./images/desktop-person.webp"
@@ -95,7 +93,6 @@
                   media="(max-width:710px)"
                   width="311"
                   height="346"
-                  alt="person"
                   srcset="./images/mobile-person.png"
                 />
 
@@ -103,13 +100,12 @@
                   media="(max-width:990px)"
                   width="281"
                   height="600"
-                  alt="person"
                   srcset="./images/tablet-person.png"
                 />
 
                 <img
                   class="about__img"
-                  srcset="./images/desktop-person.png"
+                  src="./images/desktop-person.png"
                   alt="person"
                   width="540"
                   height="600"

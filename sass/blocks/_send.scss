@@ -1,0 +1,105 @@
+.send {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 109px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    color: $grayish-blue;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 635px;
+  }
+
+  &__list {
+    @include list-unstyle;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: $grayish-blue;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: $grayish-blue;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    background-color: #e6e6e7;
+    border: none;
+    outline: none;
+    padding: 9px 16px;
+  }
+
+  &__input:focus {
+    border: 1px solid $slightly-cyan;
+  }
+
+  &__input--last {
+    padding: 9px 16px 57px 16px;
+  }
+
+  &__button {
+    border: none;
+    padding: 17px 24px;
+    background-color: $dark-blue;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .send {
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 96px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .send {
+    &__inner {
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}

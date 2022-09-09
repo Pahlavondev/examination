@@ -344,6 +344,13 @@ body {
   font-weight: 400;
   src: url("../fonts/public-sans-v14-latin-ext_latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-ext_latin-regular.woff") format("woff");
 }
+/* public-sans-700 - latin-ext_latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/public-sans-v14-latin-ext_latin-700.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-ext_latin-700.woff") format("woff");
+}
 /* ibarra-real-nova-700 - latin-ext_latin */
 @font-face {
   font-family: "Ibarra Real Nova";
@@ -462,7 +469,7 @@ body {
   }
   .nav {
     position: absolute;
-    top: 158px;
+    top: 88px;
     right: 20px;
     z-index: 1001;
     transition: all 0.3s ease;
@@ -622,7 +629,7 @@ body {
 .about__content::after {
   content: "";
   display: block;
-  border-top: 1px solid #33323d;
+  border-bottom: 1px solid #33323d;
   mix-blend-mode: normal;
   opacity: 0.15;
   margin-top: 46px;
@@ -788,6 +795,166 @@ body {
 @media only screen and (max-width: 700px) {
   .contact__inner {
     text-align: center;
+  }
+}
+.get-touch__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 47px;
+  padding: 48px 0;
+  border-top: 1px solid #dcdcde;
+  border-bottom: 1px solid #dcdcde;
+}
+.get-touch__title {
+  margin: 0;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: #33323d;
+}
+.get-touch__content {
+  width: 100%;
+  max-width: 635px;
+}
+.get-touch__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+.get-touch__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.get-touch__item {
+  margin-right: 15px;
+}
+.get-touch__item:last-child {
+  margin-right: 0;
+}
+.get-touch__link {
+  text-decoration: none;
+  display: inline-block;
+  color: #33323d;
+}
+
+@media only screen and (max-width: 960px) {
+  .get-touch__inner {
+    padding: 32px 0;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  .get-touch__title {
+    margin-bottom: 24px;
+  }
+  .get-touch__content {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .get-touch__inner {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+.send__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 109px;
+}
+.send__title {
+  margin: 0;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: #33323d;
+}
+.send__form {
+  width: 100%;
+  max-width: 635px;
+}
+.send__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.send__item {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.send__label {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+.send__input {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  background-color: #e6e6e7;
+  border: none;
+  outline: none;
+  padding: 9px 16px;
+}
+.send__input:focus {
+  border: 1px solid #5fb4a2;
+}
+.send__input--last {
+  padding: 9px 16px 57px 16px;
+}
+.send__button {
+  border: none;
+  padding: 17px 24px;
+  background-color: #203a4c;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 960px) {
+  .send__inner {
+    flex-direction: column;
+    margin-bottom: 96px;
+  }
+  .send__title {
+    margin-bottom: 32px;
+  }
+  .send__input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .send__inner {
+    margin-bottom: 80px;
+  }
+  .send__title {
+    margin-bottom: 24px;
   }
 }
 .site-footer {
