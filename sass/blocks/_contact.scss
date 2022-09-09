@@ -1,0 +1,130 @@
+.contact {
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    color: $grayish-blue;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &__line {
+    display: block;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 100%;
+    max-width: 530px;
+    height: 1px;
+    background: $grayish-blue;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid $grayish-blue;
+    padding: 17px 35px 17px 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $grayish-blue;
+    transition: all 0.5s ease;
+  }
+
+  &__link:hover {
+    background-color: $grayish-blue;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .contact {
+    &__line {
+      max-width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .contact {
+    &__line {
+      max-width: 450px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .contact {
+    &__line {
+      max-width: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .contact {
+    &__line {
+      max-width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .contact {
+    &__inner {
+      margin-bottom: 96px;
+    }
+
+    &__line {
+      max-width: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .contact {
+    &__line {
+      max-width: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    &__inner {
+      text-align: center;
+    }
+  }
+}

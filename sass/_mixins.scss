@@ -1,0 +1,15 @@
+@mixin list-unstyle {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin button {
+  padding: 0;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
