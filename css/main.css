@@ -497,7 +497,7 @@ body {
   }
 }
 .hero__inner {
-  background-image: url(../../images/desktop-hero-bg.png);
+  background-image: url(../images/desktop-hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -543,7 +543,7 @@ body {
 }
 .hero__link span {
   display: inline-block;
-  background-image: url(../../images/symbol.svg);
+  background-image: url(../images/symbol.svg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
