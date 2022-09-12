@@ -914,12 +914,34 @@ body {
   mix-blend-mode: normal;
   opacity: 0.4;
   background-color: #e6e6e7;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   padding: 9px 16px;
 }
+.send__input:not(:-moz-placeholder-shown):not(:focus):invalid {
+  border: 1px solid #f43030;
+}
+.send__input:not(:-ms-input-placeholder):not(:focus):invalid {
+  border: 1px solid #f43030;
+}
+.send__input:not(:placeholder-shown):not(:focus):invalid {
+  border: 1px solid #f43030;
+}
+.send__input:not(:-moz-placeholder-shown):not(:focus):invalid + .send__error {
+  opacity: 1;
+}
+.send__input:not(:-ms-input-placeholder):not(:focus):invalid + .send__error {
+  opacity: 1;
+}
+.send__input:not(:placeholder-shown):not(:focus):invalid + .send__error {
+  opacity: 1;
+}
 .send__input:focus {
   border: 1px solid #5fb4a2;
+}
+.send__error {
+  color: #f43030;
+  opacity: 0;
 }
 .send__input--last {
   padding: 9px 16px 57px 16px;

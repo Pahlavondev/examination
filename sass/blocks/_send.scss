@@ -48,13 +48,26 @@
     mix-blend-mode: normal;
     opacity: 0.4;
     background-color: #e6e6e7;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     padding: 9px 16px;
+
+    &:not(:placeholder-shown):not(:focus):invalid {
+      border: 1px solid $bright-red;
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid + .send__error {
+      opacity: 1;
+    }
   }
 
   &__input:focus {
     border: 1px solid $slightly-cyan;
+  }
+
+  &__error {
+    color: $bright-red;
+    opacity: 0;
   }
 
   &__input--last {
